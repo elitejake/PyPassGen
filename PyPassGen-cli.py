@@ -137,7 +137,7 @@ if '-C' in arg:
         print("Unexpected error:", sys.exc_info()[0])
         raise
 
-if help_print == False:
+if help_print is False:
     for i in range(number_of_passwords):
         password = main.generate_password(length, uppercase, numbers, symbols, strong_ran)
         if printOut:
