@@ -1,0 +1,30 @@
+Configuration for PyPassGen
+
+Length of password:
+16
+
+Number of passwords to generate:
+10
+
+Output filename: (optional)
+passwords.txt
+
+Print generated password(s) in the terminal?: [Y, N]
+N
+
+Use secrets module?: [Y, N]
+Y
+
+
+Can the password contain...
+
+... upper-case alphabets: [Y, N]
+Y
+
+... numbers: [Y, N]
+Y
+
+... symbols: [Y, N]
+Y
+
+If you somehow mess this file up, use defaults.py to reset this all the parameters.
