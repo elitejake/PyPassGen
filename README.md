@@ -14,3 +14,15 @@ Clone the repository by
 git clone https://github.com/elitejake/PyPassGen.git
 ```
 *or* download the zipped repository [here](https://github.com/elitejake/PyPassGen/archive/main.zip) and extract it.
+
+## Usage
+### Using PyPassGen-cli.py
+Usage:
+```
+PyPassGen-cli.py [arguments]
+```
+| Argument | Description |
+|--|--|
+| `-l` | Disables upper-case characters in generated passwords |
+| `-n` | Disables numbers (1, 2, 3, etc...) in generated passwords |
+| `-s` ||
