@@ -28,3 +28,4 @@ Y
 Y
 
 If you somehow mess this file up, use defaults.py to reset this all the parameters.
+Use 'PyPassGen-li.py -C' to generate password using this configuration.
