@@ -8,6 +8,8 @@ import random
 import sys
 import secrets
 
+ver = '1.0.0' #version
+
 UpperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 LowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 Numbers   = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
@@ -52,22 +54,22 @@ def generate_character(upper, numbers, symbols, strong_random):
         character =  secrets.choice(character_set)
         
         return character
+    
+    if upper:
+        character_set.append(random.choice(UpperCase))
+        character_set.append(random.choice(LowerCase))
     else:
-        if upper:
-            character_set.append(random.choice(UpperCase))
-            character_set.append(random.choice(LowerCase))
-        else:
-            character_set.append(random.choice(LowerCase))
-            
-        if numbers:
-            character_set.append(random.choice(Numbers))
-            
-        if symbols:
-            character_set.append(random.choice(Symbols))
-            
-        character =  random.choice(character_set)
+        character_set.append(random.choice(LowerCase))
         
-        return character
+    if numbers:
+        character_set.append(random.choice(Numbers))
+        
+    if symbols:
+        character_set.append(random.choice(Symbols))
+        
+    character =  random.choice(character_set)
+    
+    return character
 
 def generate_password(length, upper, numbers, symbols, strong_random):
     """
@@ -137,3 +139,15 @@ def write_to_file(passwords, filename):
     except:
         print("Unexpected error:", sys.exc_info()[0])
         raise
+
+def version():
+    """
+    Returns the version of PyPassGen.
+
+    Returns
+    -------
+    ver : str
+        Version of PyPassGen.
+
+    """
+    return ver
