@@ -43,3 +43,13 @@ PyPassGen-cli.py [arguments]
  This will produce passwords which won't have upper-case characters (`-l`), numbers (`-n`) or symbols (`-s`).
  - ```PyPassGen-cli.py -p -N 500 -S -o passwords.txt``` <br>
 This will produce 500 (`-N`) passwords using secrets module (to generate cryptographically random passwords) (`-s`) and outputs them on `passwords.txt` (`-o`). Passwords won't be printed on the terminal (`-p`).
+
+## License
+Distributed under the MIT License. See [`LICENSE.md`](https://github.com/elitejake/PyPassGen/blob/main/LICENSE.md) for more information.
+> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+> EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+> MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+> IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+> CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+> TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+> SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
