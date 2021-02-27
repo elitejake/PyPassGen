@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import sys
@@ -107,6 +108,10 @@ if '-L' in arg:
         length = int(arg[n])
     except ValueError:
         print('-L option:', arg[n], 'is invalid. It couldn\'t be converted into int.')
+        length = 8
+    except IndexError:
+        print('-L requires an argument!')
+        length = 8
 else:
     length = 8
     
