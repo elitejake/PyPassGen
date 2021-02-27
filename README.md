@@ -37,3 +37,9 @@ PyPassGen-cli.py [arguments]
 | `-c` | Copies the passwords to a clipboard (is broken) |
 | `-p` | Disables output of passwords to the terminal |
 | `-S` / `-strong`| Uses the secrets module to produce cryptographically strong password |
+#### Examples
+
+ - ```PyPassGen-cli.py -l -n -s``` <br>
+ This will produce passwords which won't have upper-case characters (`-l`), numbers (`-n`) or symbols (`-s`).
+ - ```PyPassGen-cli.py -p -N 500 -S -o passwords.txt``` <br>
+This will produce 500 (`-N`) passwords using secrets module (to generate cryptographically random passwords) (`-s`) and outputs them on `passwords.txt` (`-o`). Passwords won't be printed on the terminal (`-p`).
