@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 @author: elitejake
@@ -114,7 +115,12 @@ def write_to_file(passwords, filename):
     Returns
     -------
     None.
-
+    
+    Raises
+    ------
+    OSError :
+        If couldn\'t write to file.
+    
     """
     length = len(passwords)
     
