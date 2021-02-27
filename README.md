@@ -21,8 +21,19 @@ Usage:
 ```
 PyPassGen-cli.py [arguments]
 ```
+#### Password Configurations
 | Argument | Description |
 |--|--|
 | `-l` | Disables upper-case characters in generated passwords |
 | `-n` | Disables numbers (1, 2, 3, etc...) in generated passwords |
-| `-s` ||
+| `-s` | Disables symbols (!, @, $, etc...) in generated passwords |
+| `-L <length>` | Length (integer) of generated passwords |
+| `-C` | Uses `config.txt` to get parameters. It will override other parameters |
+#### Output
+| Argument | Description |
+|--|--|
+| `-N <number>` | Number of passwords to generate |
+| `-o <file>` | Outputs the passwords to a file |
+| `-c` | Copies the passwords to a clipboard (is broken) |
+| `-p` | Disables output of passwords to the terminal |
+| `-S` / `-strong`| Uses the secrets module to produce cryptographically strong password |
