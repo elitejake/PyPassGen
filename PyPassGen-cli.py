@@ -63,7 +63,7 @@ if '-c' in arg:
         clip   = True
         r      = tk()
     except ImportError:
-        print('Passwords will not be copied to the clipboard. This is because you doesn\'t appear to have tkinter or your Python may not be configured for tkinter.')
+        print('Passwords will not be copied to the clipboard. This is because you doesn\'t appear to have tkinter or your Python may not be configured for tkinter. Anyway this feature is broken.')
         clip   = False
 else:
     clip       = False
@@ -97,7 +97,7 @@ if '-o' in arg:
     try:
         output_filename = arg[n]
     except IndexError:
-        print('You didn\'t provide a filename.')
+        print('-o reqires an argument! (file)')
         file_out = False
 else:
     file_out = False
@@ -110,7 +110,7 @@ if '-L' in arg:
         print('-L option:', arg[n], 'is invalid. It couldn\'t be converted into int.')
         length = 8
     except IndexError:
-        print('-L requires an argument!')
+        print('-L requires an argument! (length)')
         length = 8
 else:
     length = 8
